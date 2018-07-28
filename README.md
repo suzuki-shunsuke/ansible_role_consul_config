@@ -2,6 +2,11 @@
 
 ansible role to configure consul
 
+https://galaxy.ansible.com/suzuki-shunsuke/consul_config
+
+[![GitHub last commit](https://img.shields.io/github/last-commit/suzuki-shunsuke/ansible_role_consul_config.svg)](https://github.com/suzuki-shunsuke/ansible_role_consul_config)
+[![GitHub tag](https://img.shields.io/github/tag/suzuki-shunsuke/ansible_role_consul_config.svg)](https://github.com/suzuki-shunsuke/ansible_role_consul_config/releases)
+
 This role doesn't install consul.
 If you want to install, please use [akoi](https://github.com/suzuki-shunsuke/akoi) and [suzuki-shunsuke.akoi](https://github.com/suzuki-shunsuke/ansible_role_akoi).
 
