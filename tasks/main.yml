@@ -1,0 +1,24 @@
+---
+- name: assertion
+  import_tasks: assert.yml
+- name: create user and group
+  import_tasks: user_group.yml
+- name: mkdir the consul data directory
+  file:
+    state: directory
+    path: "{{consul_merged_config.data_dir}}"
+    owner: "{{consul_user}}"
+    group: "{{consul_group}}"
+- name: configure consul
+  import_tasks: config.yml
+- name: mkdir the consul run directory
+  file:
+    state: directory
+    path: "{{consul_run_path}}"
+    owner: "{{consul_user}}"
+    group: "{{consul_group}}"
+# TODO acl
+# TODO tls
+# TODO gossip encryption
+- name: configure sytemd
+  import_tasks: systemd.yml
