@@ -14,7 +14,7 @@
 - name: mkdir the consul run directory
   file:
     state: directory
-    path: "{{consul_run_path}}"
+    path: "{{consul_pid_file|dirname}}"
     owner: "{{consul_user}}"
     group: "{{consul_group}}"
 # TODO acl

@@ -2,6 +2,8 @@ echo $0
 cd `dirname $0`
 echo "PWD: $PWD"
 
+echo "> ansible-galaxy install -r roles.yml"
+ansible-galaxy install -r roles.yml
 echo "> docker-compose up -d"
 docker-compose up -d # [--force-recreate]
 echo '> CONTAINER_ID=`docker-compose ps -q`'
