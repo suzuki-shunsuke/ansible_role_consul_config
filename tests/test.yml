@@ -12,9 +12,7 @@
       dest: /etc/akoi/akoi.yml
     become: yes
   roles:
-  - role: ansible_role_akoi
-    akoi_bin_path: /usr/local/bin/akoi-0.1.0
-    akoi_link_path: /usr/local/bin/akoi
+  - role: suzuki-shunsuke.akoi
     akoi_config_path: /etc/akoi/akoi.yml
     become: yes
   - role: ansible_role_consul_config
@@ -29,14 +27,16 @@
     become: yes
   tasks:
   - name: check akoi version
-    command: "sudo /usr/local/bin/akoi --version"
+    command: "/usr/local/bin/akoi --version"
     register: result
     changed_when: false
+    become: yes
   - debug:
       var: result.stdout
   - name: check consul version
-    command: "sudo /usr/local/bin/consul --version"
+    command: "/usr/local/bin/consul --version"
     register: result
     changed_when: false
+    become: yes
   - debug:
       var: result.stdout

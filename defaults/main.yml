@@ -27,7 +27,6 @@ consul_service_unit_file: /etc/systemd/system/consul.service
 # user and group which run consul agent
 consul_user: consul
 consul_group: consul
-# consul pid file is created at {{consul_run_path}}/consul.pid
-consul_run_path: /var/run/consul
+consul_pid_file: /var/run/consul/consul.pid
 # consul unit file's environment variables
 consul_env_vars: {}

@@ -20,6 +20,20 @@ packages:
       archive: consul
 ```
 
+## Directory Structure
+
+* user: `consul_user` default:consul
+* group: `consul_group` default:consul
+
+```
+data_dir/ default:/opt/consul
+consul_pid_file default:/var/run/consul/consul.pid
+consul_config_file default:/etc/consul/consul.json
+consul_configd_path/ default:/etc/consul/consul.d/
+  service.json
+consul_service_unit_file default:/etc/systemd/system/consul.service
+```
+
 ## Requirements
 
 * systemd
