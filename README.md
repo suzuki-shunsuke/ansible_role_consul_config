@@ -36,7 +36,7 @@ consul_service_unit_file default:/etc/systemd/system/consul.service
 
 ## Requirements
 
-* systemd
+Nothing.
 
 ## Role Variables
 

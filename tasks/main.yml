@@ -17,8 +17,10 @@
     path: "{{consul_pid_file|dirname}}"
     owner: "{{consul_user}}"
     group: "{{consul_group}}"
+  when: consul_pid_file
 # TODO acl
 # TODO tls
 # TODO gossip encryption
 - name: configure sytemd
   import_tasks: systemd.yml
+  when: consul_use_systemd
