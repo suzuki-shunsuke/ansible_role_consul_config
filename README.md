@@ -58,10 +58,11 @@ For example, if you manage consul with supervisor,
 
 ```yaml
 handlers:
-- name: restart consul
+- name: restart consul (supervisor)
   supervisorctl:
     name: consul
     state: restarted
+  listen: restart consul
 ```
 
 ## Example Playbook
