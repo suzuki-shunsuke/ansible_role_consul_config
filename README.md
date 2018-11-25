@@ -47,6 +47,23 @@ Please see
 * [vars/main.yml](vars/main.yml)
 * [tasks/assert.yml](tasks/assert.yml)
 
+## Handlers
+
+### `restart consul`
+
+If `consul_use_systemd` is `true`, systemd's service is restarted.
+
+You can define custom handlers.
+For example, if you manage consul with supervisor,
+
+```yaml
+handlers:
+- name: restart consul
+  supervisorctl:
+    name: consul
+    state: restarted
+```
+
 ## Example Playbook
 
 ```yaml
