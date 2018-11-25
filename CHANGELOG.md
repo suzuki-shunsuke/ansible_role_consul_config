@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/suzuki-shunsuke/ansible_role_consul_config/compare/v0.3.0...v0.4.0) (2018-11-25)
+
+
+### Features
+
+* add notify to restart consul ([915a683](https://github.com/suzuki-shunsuke/ansible_role_consul_config/commit/915a683))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/suzuki-shunsuke/ansible_role_consul_config/compare/v0.2.0...v0.3.0) (2018-11-23)
 
