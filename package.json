@@ -6,9 +6,9 @@
     "test": "bash tests/test_docker.sh"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
-    "@commitlint/config-angular": "8.3.4",
-    "@commitlint/travis-cli": "8.3.5",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-angular": "12.1.4",
+    "@commitlint/travis-cli": "12.1.4",
     "husky": "4.2.5",
     "standard-version": "8.0.0"
   }
